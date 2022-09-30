@@ -98,8 +98,8 @@ console.log(totalAcres)
 
 // CODE HERE
 // all I had to do was find the average which is all of the numbers from the list added together which is what the total acres is and divide it by however many objects were in that list then I created a varible to contain the average and I logged it into the terminal
-averageDailyAcres = totalAcres / 21
-console.log(averageDailyAcres)
+averageDailyAcres = totalAcres / 7
+// console.log(averageDailyAcres)
 
 
 
@@ -184,10 +184,17 @@ let pinkTons = [6.5, 32.5, 26, 13, 6.5, 32.5, 26]
 
 //I looped through each object in the array and multiplied each number by 6.5 and thats how I created the new arrays of Tons
 
+for (i = 0; i < fujiAcres.length; i++) {
+    console.log(fujiAcres[i] * 6.5)
+}
+
+for (i = 0; i < galaAcres.length; i++) {
+    console.log(galaAcres[i] * 6.5)
+}
+
 for (i = 0; i < pinkAcres.length; i++) {
     console.log(pinkAcres[i] * 6.5)
 }
-
 
 // PROBLEM 5
 
@@ -232,9 +239,17 @@ let pinkPounds = [13000,
     52000]
 
 
-// for (i = 0; i < fujiTons.length; i++) {
-//     console.log(2000 * fujiTons[i])
-// }
+for (i = 0; i < fujiTons.length; i++) {
+    console.log(2000 * fujiTons[i])
+}
+
+for (i = 0; i < galaTons.length; i++) {
+    console.log(2000 * galaTons[i])
+}
+
+for (i = 0; i < pinkTons.length; i++) {
+    console.log(2000 * pinkTons[i])
+}
 
 
 
@@ -280,12 +295,17 @@ let pinkProfit = [7150.000000000001,
     28600.000000000004]
 
 
+for (i = 0; i < fujiPounds.length; i++) {
+    console.log(fujiPounds[i] * fujiPrice)
+}
+
+for (i = 0; i < galaPounds.length; i++) {
+    console.log(galaPounds[i] * galaPrice)
+}
+
 for (i = 0; i < pinkPounds.length; i++) {
     console.log(pinkPounds[i] * pinkPrice)
 }
-
-
-
 // PROBLEM 7
 
 /*
@@ -319,4 +339,4 @@ for (let i = 0; i < pinkProfit.length; i++){
 
 totalProfit = newSum + newSum1 + newSum2
 
-console.log("$" + totalProfit.toFixed(2))
+console.log("$" + (totalProfit).toFixed(2))
